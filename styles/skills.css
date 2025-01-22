@@ -1,0 +1,328 @@
+/*FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Super-Mario-World';
+    src: url('../font/Super-Mario-World.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SuperMario256';
+    src: url('../font/SuperMario256.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*MAIN*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: url('../portifolio/img/wallPaper01.png') no-repeat center center;
+    background-size: cover;
+    animation: moveBackground 9s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+body aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    height: 10vh;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Calibri', sans-serif;
+    box-shadow: 5px 1px 25px rgba(0, 0, 0, 0.5);
+}
+footer{
+    background-color: #c84c0c;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    margin-top: 50%;
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+}
+
+main{
+    height: 92vh;
+}
+
+#menuBar{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} 
+a{
+    text-decoration: none;
+}
+button{
+    background: none;
+    border: none;
+    position: static;
+}
+
+
+/*RESPONSIVIDADE DA PAGE*/
+/*SmartPhones */
+@media only screen and (max-width: 600px) {
+    body{
+        background: url('../portifolio/img/wallPaper01-A.jpg') no-repeat;
+        background-size: cover;
+    }
+    footer{
+        margin-top: 200%;
+        background-color: #5ca949;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    #superMario{
+        padding-top: 60px;
+        margin-top: 2000px;
+        position: absolute;
+        width: 250px;
+        height: auto;
+    }
+
+
+}
+
+/*Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body{
+        background: url('../portifolio/img/wallPaper02.jpg') no-repeat center;
+        background-size: cover;
+    }
+    header{
+        align-items: center;
+        margin-bottom: 10%;
+
+    }
+    footer{
+        margin-top: 75%;
+        background-color: #9e4f0c;
+
+    }
+    #superMario{
+        position: absolute;
+        bottom: -485px;
+    }
+
+}
+
+/*Notebooks*/
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+
+}
+
+/*Smart Tvs*/
+@media only screen and (min-width: 1601px) {
+
+}
+
+/*MENU PRINCIPAL HEADER*/
+#logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: gold;
+}
+/*Animação do #logo*/
+#logo {
+    animation: piscar 0.4s infinite alternate;
+    
+}
+#logo + #logo{
+    color: red;
+}
+@keyframes piscar {
+    0% {
+        color: red;
+    }
+    100% {
+        color: gold;
+    }
+
+}
+
+#menuBar{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .6rem; 
+
+}
+#menuBar .linkMenu{
+    display: block;
+    padding: .5rem;
+}
+.linkMenu{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', 'sans-serif';
+}
+.linkMenu:hover{
+    font-weight: bold;
+    background: #444444;
+    color: gold;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+#botaoContact{
+    padding: 1px;
+    border-color: gold;
+    border-style: solid;
+}
+/*BARRA FORMAÇÕES E EXPERIÊNCIAS*/
+.experts{
+    margin-top: 2%;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding: 1.2rem;
+    background-color: #858585f6;
+}
+.expertsGroup{
+
+    
+}
+.expertsGroupDate{
+
+    border-radius: 10px;
+    border-color: gold;
+    border-width: 2px;
+    border-style:dashed;
+    padding: 5px 10px;
+    
+}
+h2{
+    text-align: center;
+    font-family: Roboto, 'sans-serif';
+}
+h3{
+    margin-top: -19px;
+    background-color: black;
+    border-radius: 10px;
+    color: gold;
+    padding: 10px 5px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Open Sans, 'sans-serif';
+}
+p{
+    justify-content: center;
+    font-family: Dosis, 'sans-serif';
+    text-align: justify;
+}
+/*HABILIDADES*/
+h1{
+    font-size: 50px;
+    -webkit-text-stroke: .1px gold;
+    padding: 25px;
+    font-family: 'Super-Mario-World', sans-serif;
+    text-align: center;
+}
+
+.skills{
+    display:flex;
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+    gap: 25px;
+    justify-content: center;
+    border-color:black;
+    border-style:groove;
+    background-color: #858585f6;
+}
+
+.hardSkills{
+    padding: 10px 5px;
+
+    
+}
+#barraHard{
+    list-style: none;
+    display: block;
+
+
+}
+#iconHard{
+    gap: 25px;
+    padding: 2px;
+
+
+}
+#iconHard img{
+    vertical-align: middle;
+}
+#iconHard a{
+    margin-left: 5px;
+    font-family: Dosis, 'sans-serif';
+    text-align: justify;
+}
+
+
+.softSkills{
+    padding: 10px 15px;
+}
+#barraSoft{
+    list-style: none;
+    display: block;
+
+}
+#iconSoft{
+    gap: 25px;
+    padding: 2px;
+
+}
+#iconSoft img{
+    vertical-align: middle;
+}
+#iconSoft a{
+    margin-left: 5px;
+    font-family: Dosis, 'sans-serif';
+    text-align: justify;
+}

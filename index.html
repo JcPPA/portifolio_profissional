@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS Import-->
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!--JavaScript Import-->
+    <script src="./script.js"></script>
+
+
+    <!--ICON AND FONT import-->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    
+    <!--Page Shape-->
+    <link rel="icon" href="./img/iconTitle.png" type="image/x-icon">
+    <title>
+        Portifólio :@Jc_PPA:
+    </title>
+</head>
+
+<body>
+
+    <header>
+        
+        <a id="logo" id="JcPPALogo" href="./index.html">
+            <img id="icon" src="./img/iconTitle.png" alt="icon-imagem">
+            <h1>Julio's PRO</h1>
+        </a>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#projetos">Projects</a></li>
+                <li><a href="#contato">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+
+            burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+
+            burger.classList.toggle('toggle');
+            });
+        });
+        </script>
+
+
+    </header>
+    <div class="unidade-pp">
+        
+        <section class="perfil-section">
+            <div class="perfil-title">
+                <h3 class="perfil-title">Perfil Profissional</h3>
+            </div>
+            
+            <div class="perfil-card">
+                
+                <img src="./img/eu-direito.png" alt="Foto de Júlio César" class="perfil-foto">
+                <div class="perfil-info">
+                    <h5>Júlio César Oliveira Bellini</h5>
+                    <p><strong>País:</strong> Brasil</p>
+                    <p><strong>Idade:</strong> 36 anos</p>
+                    <p><strong>Modalidade:</strong> Presencial e Home Office</p>
+                    <p><strong>Disponibilidade:</strong> Para viagens e mudanças de endereço</p>
+                    <p><strong>Habilitação:</strong> A e B</p>
+                    <p><strong>Idiomas:</strong> Português BR (Nat.), Inglês USA (Básico), Espanhol ES (Básico)</p>
+                </div>
+
+            </div>
+        </section>
+        <aside class="card-container">
+            <div class="cabeçalho">
+                <h2>Formação Acadêmica</h2>
+                <div class="tab-buttons">
+                    <button class="tab-button active" onclick="openTab(0)">História</button>
+                    <button class="tab-button" onclick="openTab(1)">Direito</button>
+                    <button class="tab-button" onclick="openTab(2)">Data Science</button>
+                </div>
+            </div>
+        
+            <div class="card active">
+              <h3>Licenciatura</h3>
+              <hr>
+              <p id="resumo">Resumo:</p>
+              <p id="conteudo">"Sou graduado em Licenciatura Plena em História pela Universidade Estadual de Goiás (UEG-UniJussara), com ampla experiência em pesquisa científica e extensão acadêmica na área de História Contemporânea.
+                  Minhas áreas de estudo incluem História da Filosofia, com ênfase nos desenvolvimentos metodológicos e teóricos em hermenêutica filosófica na linha de pensamento de Hans-Georg Gadamer, e na arqueogenealogia do poder na linha de Michel Foucault."
+              </p>
+              <br>
+              <h4>Áreas de Interesse: </h4>
+              <p><img src="/object/2310207_attached link_clip_link_paper clip_icon.png" alt="icon-imagem" width="15px"><span id="area-interesse">Filosofia Contemporânea</span></p>
+              <p><img src="/object/2310207_attached link_clip_link_paper clip_icon.png" alt="icon-imagem" width="15px"><span id="area-interesse">Teoria da História</span></p>
+              <p><img src="/object/2310207_attached link_clip_link_paper clip_icon.png" alt="icon-imagem" width="15px"><span id="area-interesse">História Contemporânea</span></p>
+            </div>
+        
+            <div class="card">
+                <h3>Bacharel</h3>
+                <hr>
+                <p id="resumo">Resumo:</p>
+                <p id="conteudo">"Sou bacharel em Direito pela Universidade Federal de Goiás (UFG-UniJataí), atualmente denominada Universidade Federal de Jataí (UFJ), com especialização em Direito Digital e Proteção de Dados pela UniMais, em parceria com a GranFaculdades.
+                    Minha experiência profissional se concentra principalmente nas áreas de Direito Tributário e Direito Digital, embora também tenha adquirido conhecimentos em Direito Civil, Trabalhista e Registral ao longo de minha trajetória no mercado de trabalho."
+                </p>
+                <br>
+                <h4>Áreas de Interesse: </h4>
+                <p><img src="/object/2310207_attached link_clip_link_paper clip_icon.png" alt="icon-imagem" width="15px"><span id="area-interesse">Direito Digital e Proteção de Dados</span></p>
+                <p><img src="/object/2310207_attached link_clip_link_paper clip_icon.png" alt="icon-imagem" width="15px"><span id="area-interesse">Direito Tributário</span></p>
+                <p><img src="/object/2310207_attached link_clip_link_paper clip_icon.png" alt="icon-imagem" width="15px"><span id="area-interesse">Direito Administrativo</span></p>
+            </div>
+        
+            <div class="card">
+                <h3>Tecnólogo</h3>
+                <hr>
+                <p id="resumo">Resumo:</p>
+                <p id="conteudo">"Sou graduando em Tecnólogo em Ciências de Dados pela GranFaculdades, além de atuar como programador Front-End de forma amadora. No campo da tecnologia, obtive especialização em Segurança da Informação pela UniMais, em parceria com a GranFaculdades.
+                    Meu foco na área de dados é conciliar os conhecimentos adquiridos em minhas especializações, tanto jurídica quanto técnica, para desenvolver uma abordagem de trabalho e programação concisa voltada para a IA Security."
+                </p>
+                <br>
+                <h4>Áreas de Interesse: </h4>
+                <p><img src="/object/2310207_attached link_clip_link_paper clip_icon.png" alt="icon-imagem" width="15px"><span id="area-interesse">Python</span></p>
+                <p><img src="/object/2310207_attached link_clip_link_paper clip_icon.png" alt="icon-imagem" width="15px"><span id="area-interesse">Análise de Dados</span></p>
+                <p><img src="/object/2310207_attached link_clip_link_paper clip_icon.png" alt="icon-imagem" width="15px"><span id="area-interesse">Inteligência Artificial</span></p>
+            </div>
+
+            <div class="pos-container">
+                <button class="tab-button-pos" data-target="pos-graduacao-juridica">Direito Digital e Proteção de Dados</button>
+                <button class="tab-button-pos" data-target="pos-graduacao-ti">Segurança da Informação</button>
+            </div>
+
+            <section id="pos-graduacao-ti" class="pos-graduacao">
+                <div class="conteudo-pos">
+                    <h3>Pós-Graduação em Segurança da Informação</h3>
+                    <hr>
+                    <p id="resumo"><strong>Resumo:</strong></p>
+                    <p id="conteudo">Sou pós-graduando em Segurança da Informação pela GranFaculdades...</p>
+                </div>
+            </section>
+
+            <section id="pos-graduacao-juridica" class="pos-graduacao">
+                <div class="conteudo-pos">
+                    <h3>Pós-Graduação</h3>
+                    <hr>
+                    <p id="resumo"><strong>Resumo:</strong></p>
+                    <p id="conteudo">Sou pós-graduando em Direito Digital e Proteção de Dados pela GranFaculdades...</p>
+                </div>
+            </section>
+
+        </aside>
+
+
+        <script>
+            function openTab(tabIndex) {
+                const cards = document.querySelectorAll('.card');
+                const buttons = document.querySelectorAll('.tab-button');
+                const posBotoes = document.querySelectorAll('.tab-button-pos');
+                const posGraduacoes = document.querySelectorAll('.pos-graduacao');
+        
+                // Ocultar os elementos de pós-graduação
+                posGraduacoes.forEach(pos => pos.style.display = 'none');
+                posBotoes.forEach(botao => botao.style.display = 'none');
+        
+        
+                cards.forEach(card => card.classList.remove('active'));
+                buttons.forEach(button => button.classList.remove('active'));
+        
+                cards[tabIndex].classList.add('active');
+                buttons[tabIndex].classList.add('active');
+        
+                // aparecer os botões de pós-graduação
+                if (tabIndex === 1) { // Direito
+                   posBotoes[0].style.display = 'block'; // Mostra Direito Digital
+                } else if (tabIndex === 2) { // Data Science
+                    posBotoes[1].style.display = 'block'; // Mostra Segurança da Informação
+                }
+            }
+        
+            const posBotoes = document.querySelectorAll('.tab-button-pos');
+        
+            posBotoes.forEach(botao => {
+                botao.addEventListener('click', () => {
+                    const targetId = botao.dataset.target;
+                    const targetElement = document.getElementById(targetId);
+        
+                    // Oculta todos os outros elementos de pós-graduação
+                    const posGraduacoes = document.querySelectorAll('.pos-graduacao');
+                    posGraduacoes.forEach(pos => pos.style.display = 'none');
+        
+                    if (targetElement) {
+                        targetElement.style.display = 'block';
+                    }
+                });
+            });
+        </script>
+
+        <h3 id="timeline-title">Timeline Work</h3>
+        <div class="time-line">
+            <div class="time-line-container">
+
+                    <button data-target="conteudo1" class="active">2009</button>
+                    <button data-target="conteudo2">2017</button>
+                    <button data-target="conteudo3">2021</button>
+                    <button data-target="conteudo4">Atualmente</button>
+        
+                <div id="conteudo1" class="conteudo ativo">
+                    
+                    <p><b>Local de Trabalho: </b><span>Prefeitura Municipal de Britânia > Secretaria Municipal de Saúde</span></p>
+                    <p><b>Período: </b><span>Novembro de 2009 a Abril de 2015 (Licença por Interesse Particular de Abril de 2013 a Abril de 2015; exoneração em Abril de 2015)</span></p>
+                    <p><b>Cargo: </b><span>Auxiliar Administrativo III > Auxiliar de Faturamento > Coordenador Interno de Faturamento</span></p>
+                    <p><b>Regime: </b><span>Estatutário</span></p>
+                    <p><b>Principais Atividades Desempenhadas: </b>
+                        <span>
+                         
+
+                        Alimentação de Dados nos Sistemas do SUS: Inserção, atualização e monitoramento de informações essenciais para o funcionamento e a gestão dos sistemas de saúde pública.
+                        Faturamento de AIH (Autorização de Internação Hospitalar): 
+                        Realização de atividades administrativas voltadas à organização, análise e envio de dados relacionados ao faturamento de internações hospitalares.
+                        Elaboração e Encaminhamento de Documentos: Atendimento às demandas administrativas, produzindo relatórios, ofícios e demais documentos necessários para outros setores e departamentos do órgão público.
+                        Divulgação de Projetos: Auxílio na organização e execução de atividades relacionadas à divulgação de projetos e ações promovidas pela Secretaria Municipal de Saúde.
+                        Funções Administrativas Diversificadas: Exercício de múltiplas funções administrativas devido à necessidade de um profissional com habilidades e conhecimentos diversos, contribuindo para a eficiência e agilidade dos processos internos.
+                        </span>
+                    </p>
+                    <p> <span>
+                        Motivo da Exoneração: Solicitação voluntária para conclusão do curso superior em Direito pela Universidade Federal de Goiás (UFG), Regional Jataí.
+                        </span>
+                    </p>
+                </div>
+        
+                <div id="conteudo2" class="conteudo">
+                    <p><b>Local de Trabalho: </b><span>Vara do Trabalho de Jataí, TRT 18ª Região</span></p>
+                    <p><b>Período: </b><span>2017 a 2018 (01 ano e 2 meses)</span></p>
+                    <p><b>Cargo: </b><span>Estagiário de Direito</span></p>
+                    <p><b>Regime: </b><span>Lei 11.788/2009</span></p>
+                    <p><b>Principais Atividades Desempenhadas: </b>
+                        <span>
+                            Atendimento ao Público e Advogados: Prestação de suporte e esclarecimento de dúvidas a partes interessadas e profissionais da área jurídica.
+                            Processamento e Operação dos Sistemas Jurídicos: Utilização dos sistemas PJe e SAJ para tramitação processual, consultas e acompanhamento de ações trabalhistas.
+                            Elaboração de Documentos Processuais: Confecção e desenvolvimento de petições, despachos e outros documentos sob orientação do Diretor da Vara do Trabalho.
+                            Organização do Arquivo Processual: Manutenção, catalogação e controle do arquivo processual para garantir a eficiência no acesso às informações.
+                            Acompanhamento de Resultados: Suporte no monitoramento das atividades realizadas pelos Oficiais de Justiça e atualização dos respectivos processos.
+                        </span>
+                    </p>
+                    <p><span>
+                        Motivo do termino: Encerramento da graduação em Direito pela Universidade Federal de Goiás (UFG), Regional Jataí.
+                    </span>
+                    </p>
+                </div>
+        
+                <div id="conteudo3" class="conteudo">
+                    <p><b>Local de Trabalho: </b><span>Cartório de Registro de Imóveis, Civil e Títulos e Documentos da Comarca de Aruanã (CRI-Aruanã/GO)</span></p>
+                    <p><b>Período: </b><span>18/01/2021 a 24/02/2022 (13 meses)</span></p>
+                    <p><b>Cargo: </b><span>Auxiliar de Cartório</span></p>
+                    <p><b>Regime: </b><span>CLT</span></p>
+                    <p><b>Principais Atividades Desempenhadas: </b>
+                        <span>
+                            Análise Prévia de Documentos: Verificação inicial de documentação apresentada para registro no âmbito de imóveis e títulos.
+                            Cálculo e Registro: Realização de cálculos e procedimentos relacionados ao Registro de Imóveis e Títulos e Documentos.
+                            Elaboração de Registros e Certidões: Confecção de registros civis, certidões e atos de natureza civil e imobiliária.
+                            Pesquisa de Títulos e Documentos: Pesquisa de dados e históricos de imóveis, garantindo a correta elaboração e atualização de registros.
+                            Gestão de Documentos: Desenvolvimento e organização de documentos administrativos e operacionais na gestão do Cartório.
+                        </span>
+                    </p>
+                </div>
+
+                <div id="conteudo4" class="conteudo">
+                    <p><b>Local de Trabalho: </b><span>Britânia-GO</span></p>
+                    <p><b>Período: </b><span>Atual</span></p>
+                    <p><b>Cargo: </b><span>Freelancer > Autônomo</span></p>
+                    <p><b>Regime: </b><span>Contrato de Prestação de Serviços</span></p>
+                    <p><b>Principais Atividades Desempenhadas: </b>
+                        <span>
+                            Criação de Sites: Desenvolvimento de websites personalizados, desde a concepção do design até a implementação funcional, atendendo às necessidades específicas de cada cliente.
+                            Manutenção e Atualização: Realização de ajustes, correções e atualizações em sites existentes para garantir o pleno funcionamento e a modernização das plataformas.
+                            Otimização de Desempenho: Aplicação de técnicas para melhorar a velocidade, segurança e usabilidade dos sites.
+                            Atendimento ao Cliente: Identificação de demandas, elaboração de propostas e suporte técnico para garantir a satisfação e o cumprimento dos prazos acordados.
+                        </span>
+                    </p>
+                </div>
+        </div>
+
+    
+
+    <footer>
+        <div class="footer-copyright">
+            <strong>&copy;</strong> 2025 - Júlio César Oliveira Bellini. Todos os direitos reservados.
+        </div>
+        <div class="footer-social">
+            <a class="footer-contact" href="https://www.instagram.com/jc_ppa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                <img class="footer-logo" src="./img/instagram.png" alt="icon-imagem" width="30px">
+            </a>
+            <a href="https://www.linkedin.com/in/jcppa/" target="_blank" rel="noopener noreferrer">
+                <img class="footer-logo" src="./img/linkedin.png" alt="icon-imagem" width="30px">
+            </a>
+            <a href="http://lattes.cnpq.br/9671873870525585" target="_blank" rel="noopener noreferrer">
+                <img class="footer-logo" src="./img/lattes.png" alt="icon-imagem" width="30px">
+            </a>
+            <a href="https://github.com/JcPPA" target="_blank" rel="noopener noreferrer">
+                <img class="footer-logo" src="./img/github.png" alt="icon-imagem" width="30px">
+            </a>
+        </div>
+    </footer>
+    
+    <script src=".//app/server.js"></script>
+
+</body>
+
+</html>
