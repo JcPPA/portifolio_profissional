@@ -26,7 +26,7 @@
         <li>Domínio de FrontEnd (HTML, CSS e Javascript);</li>
         <li>Proficiente em Pacote Office e BrOffice;</li>
         <li>Autodidata em Python;</li>
-        <li>Trabalho em equipe eficaz;</li>
+        <li>Trabalho eficaz em equipe;</li>
         <li>Abordagem crítica para problemas;</li>
         <li>Gerenciamento eficaz do tempo;</li>
         <li>Atualização constante por meio de cursos, treinamentos, graduações e pós-graduações;</li>

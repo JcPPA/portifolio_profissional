@@ -5,5 +5,12 @@
     "subject": "Teste1",
     "message": "text1",
     "date": "2025-01-23T01:24:44.891Z"
+  },
+  {
+    "email": "meuteste2@naoenrola.com",
+    "whatsapp": "999999999999",
+    "subject": "Teste2",
+    "message": "text2",
+    "date": "2025-01-23T02:26:59.567Z"
   }
 ]
