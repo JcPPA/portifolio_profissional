@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS Import-->
+    <link rel="stylesheet" href="../styles/Contatos.css">
+
+
+    <!--JavaScript Import-->
+    <script src="../scripts/Contatos.js" defer></script>
+
+
+    <!--ICON AND FONT import-->
+
+
+
+    
+    
+    <!--Page Shape-->
+    <link rel="icon" href="../img/iconTitle.png" type="image/x-icon">
+    <title>
+        Portifólio :@Jc_PPA:
+    </title>
+</head>
+
+<body>
+
+    <header>
+        
+        <a id="logo" id="JcPPALogo" href="../index.html">
+            <img id="icon" src="../img/iconTitle.png" alt="icon-imagem">
+            <h1>Julio's PRO</h1>
+        </a>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="../pages/Projetos.html">Projetos</a></li>
+                <li><a href="../pages/Contatos.html">Contato</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+
+            burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+
+            burger.classList.toggle('toggle');
+            });
+        });
+        </script>
+
+
+    </header>
+
+
+
+    <main class="main-content">
+
+      <div class="container">
+        <h2>Envie sua Mensagem</h2>
+        <form id="contactForm">
+          <input type="hidden" name="_next" value="success.html">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_subject" value="Novo contato do site">
+          <input type="hidden" name="_auto_response" value="Obrigado pelo seu contato.">
+          <input type="hidden" name="_cc" value="juliuscaesar.imperium5@gmail.com">
+    
+          <div class="form-group">
+            <div id='icon-container'>
+              <img id="Icon" src="../object/arquivo-de-e-mail.png" alt="email icon">
+              <label for="email">Seu Email (requerido):</label>
+            </div>
+            <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+            <span id="emailError" class="error-message"></span>
+          </div>
+    
+          <div class="form-group">
+            <div id='icon-container'>
+              <img id="Icon" src="../object/whatsapp.png" alt="whatsapp icon">
+              <label for="whatsapp">Whatsapp (ex: 5511999999999):</label>
+            </div>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="ex: 5511999999999" pattern="[0-9]{2}[0-9]{2}[0-9]{8,9}">
+            <span id="whatsappError" class="error-message"></span>
+          </div>
+    
+          <div class="form-group">
+            <div id='icon-container'>
+              <img id="Icon" src="../object/pena.png" alt="pen icon">
+              <label for="subject">Assunto:</label>
+            </div>
+            <input type="text" id="subject" name="subject">
+          </div>
+    
+          <div class="form-group">
+            <div id='icon-container'>
+              <img id="Icon" src="../object/caneta-de-pena.png" alt="pen icon">
+              <label for="message">Mensagem:</label>
+            </div>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+    
+          <button type="submit">Enviar Mensagem</button>
+          <div id="formMessage" class="message"></div>
+        </form>
+      </div>
+
+        <section id="template">
+            <h3 class="template-title">Seu contato sempre é bem-vindo!</h3>
+            <img src="../object/contato-de-pessoas.png" alt="Ícone de contato" aria-label="Ícone representando contato com pessoas" width="250px">
+        </section>
+
+    </main>
+    
+
+    <footer>
+        <div class="footer-copyright">
+            <strong>&copy;</strong> 2025 - Júlio César Oliveira Bellini. Todos os direitos reservados.
+        </div>
+        <div class="footer-social">
+            <a class="footer-contact" href="https://www.instagram.com/jc_ppa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                <img class="footer-logo" src="../img/instagram.png" alt="icon-imagem" width="30px">
+            </a>
+            <a href="https://www.linkedin.com/in/jcppa/" target="_blank" rel="noopener noreferrer">
+                <img class="footer-logo" src="../img/linkedin.png" alt="icon-imagem" width="30px">
+            </a>
+            <a href="http://lattes.cnpq.br/9671873870525585" target="_blank" rel="noopener noreferrer">
+                <img class="footer-logo" src="../img/lattes.png" alt="icon-imagem" width="30px">
+            </a>
+            <a href="https://github.com/JcPPA" target="_blank" rel="noopener noreferrer">
+                <img class="footer-logo" src="../img/github.png" alt="icon-imagem" width="30px">
+            </a>
+        </div>
+    </footer>
+    
+    <script src="../app/data.json" defer></script>
+
+
+</body>
+
+</html>
